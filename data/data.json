@@ -1,0 +1,67 @@
+{
+    "items": [
+        {
+            "type": "top",
+            "gender": "male",
+            "size": "48",
+            "brand": "rafsimons",
+            "image": "../image/top1.png"
+        },
+        {
+            "type": "top",
+            "gender": "female",
+            "size": "46",
+            "brand": "lemaire",
+            "image": "../image/top2.png"
+        },
+        {
+            "type": "bottom",
+            "gender": "male",
+            "size": "32",
+            "brand": "lemaire",
+            "image": "../image/bottom1.png"
+        },
+        {
+            "type": "top",
+            "gender": "male",
+            "size": "44",
+            "brand": "rafsimons",
+            "image": "../image/top3.png"
+        }, 
+        {
+            "type": "top",
+            "gender": "male",
+            "size": "48",
+            "brand": "rafsimons",
+            "image": "../image/top4.png"
+        },       
+        {
+            "type": "outer",
+            "gender": "female",
+            "size": "46",
+            "brand": "lemaire",
+            "image": "../image/outer1.png"
+        }, 
+        {
+            "type": "outer",
+            "gender": "male",
+            "size": "48",
+            "brand": "lemaire",
+            "image": "../image/outer2.png"
+        }, 
+        {
+            "type": "bottom",
+            "gender": "female",
+            "size": "28",
+            "brand": "cos",
+            "image": "../image/bottom2.png"
+        }, 
+        {
+            "type": "bottom",
+            "gender": "female",
+            "size": "30",
+            "brand": "cos",
+            "image": "../image/bottom3.png"
+        }, 
+    ]
+}

@@ -1,3 +1,9 @@
+:root {
+
+    /* animation */
+    --animation-duration: 300ms;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -8,8 +14,11 @@ body {
 }
 
 .logo {
+    cursor: pointer;
+    margin-bottom: 10px;
     width: 100px;
     height: 100px;
+    transition: transform var(--animation-duration) ease;
 }
 
 .itemImage {
@@ -19,21 +28,33 @@ body {
 
 .item {
     padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .items {
     border: none;
     list-style: none;
+    height: 60%;
+    width: 40%;
+    overflow-y: scroll;
 }
 
 
 .button {
+    font-size: 20px;
+    cursor: pointer;
     border: transparent;
+    transition: transform var(--animation-duration) ease;
 }
 
-.button :hover,
-.logo :hover {
+.itemDescription {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.button:hover,
+.logo:hover {
     transform: scale(1.1);
-    cursor: pointer;
-    animation: transform ease;
 }
