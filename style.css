@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:lightgray;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.itemImage {
+    height: 250px;
+    width: 230px;
+}
+
+.item {
+    padding: 25px;
+}
+
+.items {
+    border: none;
+    list-style: none;
+}
+
+
+.button {
+    border: transparent;
+}
+
+.button :hover,
+.logo :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    animation: transform ease;
+}
