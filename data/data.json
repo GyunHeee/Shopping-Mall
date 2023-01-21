@@ -62,6 +62,20 @@
             "size": "30",
             "brand": "cos",
             "image": "../image/bottom3.png"
-        }, 
+        },
+        {
+            "type": "acc",
+            "gender": "unisex",
+            "size": "free",
+            "brand": "cos",
+            "image": "../image/acc1.png"
+        },
+        {
+            "type": "acc",
+            "gender": "unisex",
+            "size": "free",
+            "brand": "cos",
+            "image": "../image/acc2.png"
+        }
     ]
 }
