@@ -40,15 +40,11 @@ body {
     transition: transform var(--animation-duration) ease;
 }
 
-.itemImage {
-   width: 100%;
-   height: 100%;
-}
-
 .item {
     padding: 25px;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -62,15 +58,35 @@ body {
     padding: 0;
 }
 
-.itemImage:hover {
+.itemImage {
+    width: 100%;
+    height: 100%;
+}
+
+.item:hover {
     cursor: pointer;
-    opacity: 0.5;
+}
+
+.item:hover .itemDescription{
+    opacity: 0.8;
     transition: all var(--animation-duration) ease;
 }
 
-.itemImage:hover ~ .itemDescription{
-    opacity: 0.8;
+.itemDescription {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    font-size: var(--font-regular);
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .button {
     font-size: var(--font-regular);
@@ -78,16 +94,6 @@ body {
     border: transparent;
     transition: transform var(--animation-duration) ease;
 }
-
-.itemDescription {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    opacity: 0;
-    font-size: var(--font-regular);
-    font-weight: 600;
-}
-
 
 .button:hover,
 .logo:hover,
