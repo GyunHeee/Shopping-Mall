@@ -1,7 +1,7 @@
 // json에 있는 정보를 받아오기
 function loadItems() {
-    return fetch('../data/data.json') // json파일에 접근
-        .then(response => response.json()) // reponse에 있는 정보
+    return fetch('../data/data.json') // json파일에 접근 
+        .then(response => response.json()) // reponse에 있는 정보 , json() 메서드는 JSON 응답을 JavaScript 객체 리터럴로 구문분석합니다.
         .then(json => json.items) // json.item 객체에 접근
 }
 

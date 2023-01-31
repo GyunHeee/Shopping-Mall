@@ -12,8 +12,6 @@ a {
     color: white;
 }
 
-
-
 .about__logo{
     position: fixed;
     top: 0px;
@@ -67,6 +65,7 @@ body {
 .itemImage:hover {
     cursor: pointer;
     opacity: 0.5;
+    transition: all var(--animation-duration) ease;
 }
 
 .itemImage:hover ~ .itemDescription{
@@ -86,8 +85,8 @@ body {
     text-align: center;
     opacity: 0;
     font-size: var(--font-regular);
+    font-weight: 600;
 }
-
 
 
 .button:hover,
