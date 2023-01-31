@@ -3,18 +3,23 @@
     /* animation */
     --animation-duration: 300ms;
 
+    /* font size */
+    --font-regular: 20px;
 }
 
 a {
     text-decoration: none;
     color: white;
-    
 }
 
-.about {
+
+
+.about__logo{
     position: fixed;
     top: 0px;
     text-align: center;
+    font-size: 22px;
+    transition: transform var(--animation-duration) ease;
 }
 
 
@@ -68,7 +73,7 @@ body {
 }
 
 .button {
-    font-size: 20px;
+    font-size: var(--font-regular);
     cursor: pointer;
     border: transparent;
     transition: transform var(--animation-duration) ease;
@@ -79,12 +84,14 @@ body {
     top: 50%;
     text-align: center;
     opacity: 0;
+    font-size: var(--font-regular);
 }
 
 
 
 .button:hover,
-.logo:hover {
+.logo:hover,
+.about__logo:hover {
     transform: scale(1.1);
 }
 
