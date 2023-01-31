@@ -1,8 +1,8 @@
 // json에 있는 정보를 받아오기
 function loadItems() {
-    return fetch('../data/data.json')  // json파일에 접근
-    .then(response => response.json()) // reponse에 있는 정보
-    .then(json => json.items)          // json.item 객체에 접근
+    return fetch('../data/data.json') // json파일에 접근
+        .then(response => response.json()) // reponse에 있는 정보
+        .then(json => json.items) // json.item 객체에 접근
 }
 
 
@@ -39,13 +39,13 @@ function onClickButton(event, items) {
 function setItems(items) {
     const logo = document.querySelector('.logo');
     const buttons = document.querySelector('.buttons');
-    logo.addEventListener('click',() => displayItems(items));
+    logo.addEventListener('click', () => displayItems(items));
     buttons.addEventListener('click', event => onClickButton(event, items));
 }
 
-loadItems() 
+loadItems()
     .then(items => {
-    displayItems(items);
-    setItems(items);
+        displayItems(items);
+        setItems(items);
     })
     .catch(console.log)

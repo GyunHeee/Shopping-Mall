@@ -2,9 +2,24 @@
 
     /* animation */
     --animation-duration: 300ms;
+
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.about {
+    position: fixed;
+    top: 0px;
+    text-align: center;
+}
+
+
 body {
+    margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,12 +37,13 @@ body {
 }
 
 .itemImage {
-    height: 250px;
-    width: 230px;
+   width: 100%;
+   height: 100%;
 }
 
 .item {
     padding: 25px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +55,17 @@ body {
     height: 60%;
     width: 40%;
     overflow-y: scroll;
+    padding: 0;
 }
 
+.itemImage:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.itemImage:hover ~ .itemDescription{
+    opacity: 0.8;
+}
 
 .button {
     font-size: 20px;
@@ -50,11 +75,16 @@ body {
 }
 
 .itemDescription {
-    margin-left: 5px;
-    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
 }
+
+
 
 .button:hover,
 .logo:hover {
     transform: scale(1.1);
 }
+
