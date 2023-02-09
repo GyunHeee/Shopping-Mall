@@ -16,3 +16,5 @@ HTML, CSS, JavaScript, Json
 * javascript의 promise 객체
 * javascript의 DOM 요소
 * event.target
+## Deploy
+https://gyunheee.github.io/Shopping-Mall/
